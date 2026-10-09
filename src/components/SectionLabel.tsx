@@ -1,0 +1,1 @@
+export default function SectionLabel({number,label}:{number:string;label:string}){return <div className="mb-7 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-emerald-600 dark:text-emerald-300"><span>{number}</span><span className="h-px w-8 bg-current opacity-50"/><span className="text-black/50 dark:text-white/50">{label}</span></div>}

@@ -1,0 +1,2 @@
+import SectionLabel from './SectionLabel';
+export default function PageHeader({number,label,title,description}:{number:string;label:string;title:string;description:string}){return <div className="mb-12"><SectionLabel number={number} label={label}/><h1 className="max-w-4xl text-5xl font-semibold tracking-[-0.055em] sm:text-6xl lg:text-7xl">{title}</h1><p className="mt-6 max-w-3xl text-base leading-8 text-black/60 dark:text-white/60">{description}</p></div>}

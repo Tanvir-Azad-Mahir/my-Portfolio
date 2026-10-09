@@ -1,0 +1,4 @@
+import { Link } from 'react-router-dom';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { profile } from '../data/profile';
+export default function Footer(){return <footer className="border-t border-black/10 px-5 py-9 dark:border-white/10"><div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 text-sm text-black/55 dark:text-white/55 sm:flex-row sm:items-center"><span>© {new Date().getFullYear()} {profile.name}. Built with React.</span><div className="flex items-center gap-5"><Link to="/projects" className="hover:underline">Projects</Link><Link to="/research" className="hover:underline">Research</Link><a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub size={19}/></a><a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin size={19}/></a></div></div></footer>}
